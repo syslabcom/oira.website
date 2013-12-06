@@ -1,0 +1,896 @@
+@font-face {
+	font-family: "Abadi";
+	src: url("++resource++osha.campaigntoolkit.resources/fonts/Abadi-MT-Std-Condensed Light.otf")
+}
+
+body {
+   /* background: url('++resource++osha.campaigntoolkit.resources/top.gif') repeat-x scroll left top transparent; */
+    font-family: Verdana, Helvetica, "Lucida Grande", Lucida, Arial, sans-serif;
+
+}
+/*
+body.template-homepage-view div#portal-column-content{
+    width: 600px;
+}
+*/
+body.template-homepage-view div#portal-breadcrumbs {
+    display: none;
+}
+body.template-homepage-view .documentFirstHeading {
+  font-size: 2em;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Verdana, Helvetica, "Lucida Grande", Lucida, Arial, sans-serif;
+}
+
+h1 { font-size: 150%;}
+h2 {
+    font-size: 120%;
+    padding-top:1em;
+}
+h3 { font-size: 100%;}
+
+/*dl.portlet ul.navTreeLevel1 .navTreeItem {
+    padding-left: 1.5em;
+}*/
+#content a:hover, dl.portlet a:hover {
+    color: #003399 !important;
+}
+dl.portlet a.navTreeCurrentNode {
+    border-left: 1em solid !important;
+    margin-left: -1em;
+    margin-right: -1em;
+    padding-left:5px;
+}
+dl.portlet a.navTreeItemInPath {
+    background-color: #ddd;
+    margin-left: -1em;
+    margin-right: -1em;
+    padding-left:5px;
+}
+
+/* Links */
+
+#content a:link,
+dl.portlet a:link {
+    color: #003399;
+    border-bottom: 0.1em solid #003399;
+}
+
+dl.portlet a:visited {
+    color: #003399;
+    border-bottom: 0.1em solid #003399;
+}
+#content a:visited {
+    color: #668899;
+    border-bottom: 0.1em solid #668899;
+}
+
+#content a:hover,
+dl.portlet a:hover {
+    color: yellow;
+}
+#content a:target {
+    background-color: #ffb;
+}
+
+/* google translate viewlet in the header */
+div#googletranslate{
+    display: block;
+    float: right;
+    margin: 1px 80px 0 201px;
+}
+
+/* back to corporate site */
+div#gotocorporate {
+    float:left;
+    margin-top: 56px;
+    font-size: 80%
+}
+
+div#gotocorporate .external-marker{
+    font-size: 65%;
+}
+
+/* Footer */
+#portal-siteactions {
+    border-top: 1px solid #ddd;
+    padding-top: 1em;
+}
+#portal-siteactions a {
+    color: #999;
+    font-size: 12px;
+}
+/* Simplifications */
+
+/*#plone-contentmenu-actions,
+#plone-contentmenu-display,
+.managePortletsLink {
+    display:none;
+}
+*/
+/* */
+
+#content ul {
+    margin-bottom: 1em;
+}
+
+/* Button http://webdesignerwall.com/tutorials/css3-gradient-buttons */
+
+.button {
+    display: inline-block;
+    zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
+    *display: inline;
+    vertical-align: baseline;
+    margin: 0 2px;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font: 14px/100% Arial, Helvetica, sans-serif;
+    padding: .5em 2em .55em;
+    text-shadow: 0 1px 1px rgba(0,0,0,.3);
+    -webkit-border-radius: .5em;
+    -moz-border-radius: .5em;
+    border-radius: .5em;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.button:hover {
+    text-decoration: none;
+}
+.button:active {
+    position: relative;
+    top: 1px;
+}
+
+.bigrounded {
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    border-radius: 2em;
+}
+.medium {
+    font-size: 12px;
+    padding: .4em 1.5em .42em;
+}
+.small {
+    font-size: 11px;
+    padding: .2em 1em .275em;
+}
+.social {
+    font-size: 16px;
+    padding: 4px 6px;
+}
+/* black */
+.button.black {
+    color: #d7d7d7;
+    border: solid 1px #333;
+    background: #333;
+    background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#000));
+    background: -moz-linear-gradient(top,  #666,  #000);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#666666', endColorstr='#000000');
+}
+.button.black:hover {
+    background: #000;
+    background: -webkit-gradient(linear, left top, left bottom, from(#444), to(#000));
+    background: -moz-linear-gradient(top,  #444,  #000);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endColorstr='#000000');
+}
+.button.black:active {
+    color: #666;
+    background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#444));
+    background: -moz-linear-gradient(top,  #000,  #444);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#666666');
+}
+
+/* gray */
+.button.gray {
+    color: #e9e9e9;
+    border: solid 1px #555;
+    background: #6e6e6e;
+    background: -webkit-gradient(linear, left top, left bottom, from(#888), to(#575757));
+    background: -moz-linear-gradient(top,  #888,  #575757);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#888888', endColorstr='#575757');
+}
+.button.gray:hover {
+    background: #616161;
+    background: -webkit-gradient(linear, left top, left bottom, from(#757575), to(#4b4b4b));
+    background: -moz-linear-gradient(top,  #757575,  #4b4b4b);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#757575', endColorstr='#4b4b4b');
+}
+.button.gray:active {
+    color: #afafaf;
+    background: -webkit-gradient(linear, left top, left bottom, from(#575757), to(#888));
+    background: -moz-linear-gradient(top,  #575757,  #888);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#575757', endColorstr='#888888');
+}
+
+/* white */
+.button.white {
+    color: #606060;
+    border: solid 1px #b7b7b7;
+    background: #fff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ededed));
+    background: -moz-linear-gradient(top,  #fff,  #ededed);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed');
+}
+.button.white:hover {
+    background: #ededed;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#dcdcdc));
+    background: -moz-linear-gradient(top,  #fff,  #dcdcdc);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dcdcdc');
+}
+.button.white:active {
+    color: #999;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#fff));
+    background: -moz-linear-gradient(top,  #ededed,  #fff);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#ffffff');
+}
+
+/* orange */
+.button.orange {
+    color: #fef4e9;
+    border: solid 1px #da7c0c;
+    background: #f78d1d;
+    background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
+    background: -moz-linear-gradient(top,  #faa51a,  #f47a20);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
+}
+.button.orange:hover {
+    background: #f47c20;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f88e11), to(#f06015));
+    background: -moz-linear-gradient(top,  #f88e11,  #f06015);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015');
+}
+.button.orange:active {
+    color: #fcd3a5;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f47a20), to(#faa51a));
+    background: -moz-linear-gradient(top,  #f47a20,  #faa51a);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', endColorstr='#faa51a');
+}
+
+/* red */
+.button.red {
+    color: #faddde;
+    border: solid 1px #980c10;
+    background: #d81b21;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ed1c24), to(#aa1317));
+    background: -moz-linear-gradient(top,  #ed1c24,  #aa1317);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ed1c24', endColorstr='#aa1317');
+}
+.button.red:hover {
+    background: #b61318;
+    background: -webkit-gradient(linear, left top, left bottom, from(#c9151b), to(#a11115));
+    background: -moz-linear-gradient(top,  #c9151b,  #a11115);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#c9151b', endColorstr='#a11115');
+}
+.button.red:active {
+    color: #de898c;
+    background: -webkit-gradient(linear, left top, left bottom, from(#aa1317), to(#ed1c24));
+    background: -moz-linear-gradient(top,  #aa1317,  #ed1c24);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#aa1317', endColorstr='#ed1c24');
+}
+
+/* blue */
+#content .button.blue {
+    color: #d9eef7 !important;
+    border: solid 1px #0076a3;
+    background: #0095cd;
+    background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+    background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#00adee', endColorstr='#0078a5');
+}
+#content .button.blue:hover {
+    background: #007ead;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+    background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#0095cc', endColorstr='#00678e');
+}
+#content .button.blue:active {
+    color: #80bed6;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0078a5), to(#00adee));
+    background: -moz-linear-gradient(top,  #0078a5,  #00adee);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#0078a5', endColorstr='#00adee');
+}
+
+
+#content .button.darkblue {
+    color: #d9eef7 !important;
+    border: solid 1px #003399;
+    background: #999ada;
+    background: -webkit-gradient(linear, left top, left bottom, from(#999ada), to(#003399));
+    background: -moz-linear-gradient(top,  #999ada,  #003399);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#999ada', endColorstr='#003399');
+}
+#content .button.darkblue:hover {
+    background: #52126d;
+    background: -webkit-gradient(linear, left top, left bottom, from(#001e8e), to(#061454));
+    background: -moz-linear-gradient(top,  #001e8e,  #061454);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#001e8e', endColorstr='#061454');
+}
+#content .button.darkblue:active {
+    color: #80bed6;
+    background: -webkit-gradient(linear, left top, left bottom, from(#003399), to(#999ada));
+    background: -moz-linear-gradient(top,  #003399, #999ada);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#003399', endColorstr='#999ada');
+}
+
+/* rosy */
+.button.rosy {
+    color: #fae7e9;
+    border: solid 1px #b73948;
+    background: #da5867;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f16c7c), to(#bf404f));
+    background: -moz-linear-gradient(top,  #f16c7c,  #bf404f);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f16c7c', endColorstr='#bf404f');
+}
+.button.rosy:hover {
+    background: #ba4b58;
+    background: -webkit-gradient(linear, left top, left bottom, from(#cf5d6a), to(#a53845));
+    background: -moz-linear-gradient(top,  #cf5d6a,  #a53845);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#cf5d6a', endColorstr='#a53845');
+}
+.button.rosy:active {
+    color: #dca4ab;
+    background: -webkit-gradient(linear, left top, left bottom, from(#bf404f), to(#f16c7c));
+    background: -moz-linear-gradient(top,  #bf404f,  #f16c7c);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#bf404f', endColorstr='#f16c7c');
+}
+
+/* green */
+.button.green {
+    color: #e8f0de;
+    border: solid 1px #538312;
+    background: #64991e;
+    background: -webkit-gradient(linear, left top, left bottom, from(#7db72f), to(#4e7d0e));
+    background: -moz-linear-gradient(top,  #7db72f,  #4e7d0e);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#7db72f', endColorstr='#4e7d0e');
+}
+.button.green:hover {
+    background: #538018;
+    background: -webkit-gradient(linear, left top, left bottom, from(#6b9d28), to(#436b0c));
+    background: -moz-linear-gradient(top,  #6b9d28,  #436b0c);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#6b9d28', endColorstr='#436b0c');
+}
+.button.green:active {
+    color: #a9c08c;
+    background: -webkit-gradient(linear, left top, left bottom, from(#4e7d0e), to(#7db72f));
+    background: -moz-linear-gradient(top,  #4e7d0e,  #7db72f);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#4e7d0e', endColorstr='#7db72f');
+}
+
+/* pink */
+.button.pink {
+    color: #feeef5;
+    border: solid 1px #d2729e;
+    background: #f895c2;
+    background: -webkit-gradient(linear, left top, left bottom, from(#feb1d3), to(#f171ab));
+    background: -moz-linear-gradient(top,  #feb1d3,  #f171ab);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#feb1d3', endColorstr='#f171ab');
+}
+.button.pink:hover {
+    background: #d57ea5;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f4aacb), to(#e86ca4));
+    background: -moz-linear-gradient(top,  #f4aacb,  #e86ca4);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4aacb', endColorstr='#e86ca4');
+}
+.button.pink:active {
+    color: #f3c3d9;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f171ab), to(#feb1d3));
+    background: -moz-linear-gradient(top,  #f171ab,  #feb1d3);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f171ab', endColorstr='#feb1d3');
+}
+
+/* end Button */
+
+#portal-logo {
+    background: url('++resource++osha.campaigntoolkit.resources/logoinner2.gif') no-repeat scroll right bottom white;
+    padding: 4px 30px 10px 10px;
+    float: left;
+	display: block;
+    margin-top: 0;
+	margin-left: 10px;
+}
+#portal-top {
+    padding: 14px 0;
+	background: url('++resource++osha.campaigntoolkit.resources/logoinner.gif') no-repeat scroll 0 29px transparent;
+
+}
+#portal-top div.width-full {
+    width: 99%;
+}
+#portal-top div.position-0 {
+    margin-left: -99%;
+}
+#portal-top input.searchField {
+    -moz-appearance: searchfield;
+    -webkit-appearance: searchfield;
+    padding-left: 0.5em;
+}
+#portal-top .goog-te-combo {
+    width: 200px;
+}
+#portal-top #searchGadget {
+    width: 190px;
+}
+#portal-header {
+    background: transparent url('++resource++osha.campaigntoolkit.resources/headereurope.gif') no-repeat scroll right 6px;
+    height: 150px;
+}
+/*#portal-header:after {
+    content: "Campaign Toolkit";
+    display:block;
+    text-align:right;
+    text-shadow: 0 4px 4px #000;
+    margin-top: 106px;
+    color: #b1c6ff;
+    color: white;
+    font-size: 22px;
+    font-family: Delicious, Verdana, Helvetica, "Lucida Grande", Lucida, Arial, sans-serif;
+    font-style:italic;
+    @font-face { font-family: Delicious; src: url('Delicious-Roman.otf'); }
+}*/
+#portal-searchbox {
+    padding-top: 36px;
+}
+#portal-searchbox .searchSection {
+    visibility: hidden;
+}
+
+#LSResult {
+    margin: -21px 0 0 -7em;
+    background-color: #CFDBE6;
+    border: 0.1em solid #CCCCCC;
+}
+#LSResult fieldset.livesearchContainer {
+    border: none;
+    margin: 0;
+}
+#livesearchLegend {
+    border: 1px solid black;
+}
+.LSRowExtra a {
+    color: black;
+}
+
+#visual-portal-wrapper-container{
+    background: transparent url('++resource++osha.campaigntoolkit.resources/top.gif') repeat-x scroll top left;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#visual-portal-wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+#portal-personaltools {
+    margin-right: 80px;
+}
+#content-views {
+    background-color: #1b259e;
+}
+#contentActionMenus {
+    background-color: #1b259e;
+}
+#contentActionMenus dl.actionMenu a, #contentActionMenus dl.actionMenu.activated dd {
+    background-color: #1b259e;
+}
+#edit-bar {
+    background-color: #1b259e;
+    border: 0.25em solid #1b259e;
+    border-bottom: 0;
+}
+#contentActionMenus dl.actionMenu.activated dd {
+    border-bottom: 0.5em solid #1b259e;
+}
+#content .documentDescription, #content #description {
+    font-style:italic;
+    font-weight: normal;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    line-height: 1.6em;
+    margin-bottom:2em;
+}
+#overview-columns > div{
+    float: left;
+    margin-right: 2em;
+    width: 45%;
+}
+#overview-columns ul{
+    list-style: none;
+    margin-left: 0;
+}
+#content h2 > a,
+#content h2 > a:visited,
+#content h2 > a:link {
+    font: 22px Abadi;
+    color:#515151;
+    letter-spacing: 1px;
+}
+#content h2 > a:hover {
+    color: #000;
+}
+.navTreeLevel2 {
+    background-color: #eee;
+    font-style: italic;
+}
+.navTreeLevel2 a {
+    padding-left: 10px;
+}
+.portletNavigationTree{
+border-top: 0.1em dotted #DDDDDD;
+}
+
+.shadow {
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc;
+}
+.shadow-inner {
+   -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
+}
+.sublist{
+    margin-left: 3em;
+    font-style: italic;
+}
+
+.sublist a {
+    margin-right: 0.5em;
+}
+
+/* toolstable */
+
+#toolstable {
+    clear: both;
+
+}
+#toolstable tr td {
+    vertical-align: text-top;
+    width: 49%;
+}
+#toolstable li{
+    display: inline;
+    font-style: italic;
+}
+/* end toolstable */
+
+/* make sure font size in overlay is the same as on the rest of the page */
+.pb-ajax #content{
+    font-size: 100%;
+}
+
+/* Hide Description on the toolexample overlay */
+.pb-ajax .documentDescription {
+    display: none;
+}
+
+/* styles new header 2012/05/01***********************/
+
+
+#content{
+    padding: 0;
+}
+
+body.section-front-page h1.documentFirstHeading {
+  font-size: 140%;
+}
+
+#agency_fullname{
+    text-transform: uppercase;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 80%;
+}
+
+#highlights{
+    border: 1px solid #c5cbd8;
+    padding-bottom: 2.5em;
+    height: 340px;
+}
+
+#highlightsContainer {
+   padding-bottom: 20px;
+   background: url("++resource++osha.campaigntoolkit.resources/highlights.gif") no-repeat bottom center;
+   margin-bottom: 2em;
+   font-size: 80%;
+   line-height: 1.5em;
+}
+
+#highlights-content {
+    height: 290px;
+    margin-bottom: 15px;
+}
+
+#highlights h2, #in-focus-container h2{
+    background: #c5cbd8;
+    font-size: 1.2em;
+    border-bottom: 0;
+    padding: 0.5em 1em;
+    margin:0;
+}
+
+#highlights h3{
+    font-size: 1.4em;
+    color: #003399;
+    margin: 0;
+}
+#highlights-1, #highlights-2, #highlights-3, #highlights-4 {
+    padding: 1em;
+}
+
+#highlights-tabs {
+    list-style: none;
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 1em 0.5em 0;
+}
+
+#highlights-tabs li.ui-corner-top {
+    float: left;
+     margin: 0 0.5em 0 0;
+
+
+}
+#highlights-tabs li a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-shadow: 2px 2px 2px #999;
+    background: #c5cbd8;
+    padding: 0.1em 0.8em;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    cursor: pointer;
+}
+
+#highlights-tabs li:hover a{
+    color: #003399;
+}
+
+#highlights-tabs li.ui-state-active {
+    background:#98a2b7;
+}
+
+#highlights-tabs a.current {
+    background:#98a2b7;
+}
+
+.teaserdate{
+    background: #e6e8ed;
+    padding: 0.2em 1em;
+    font-size: 0.8em;
+    color: #666;
+    display: inline-block;
+    margin: 1em 0;
+
+}
+
+
+#highlights img{
+    float: right;
+    margin: 1em 0 1em 1em;
+}
+
+#in-focus-container ul{
+    margin:0;
+    list-style: none;
+}
+
+#in-focus img{
+   float: right;
+   margin: 0 0 0.5em 0.5em;
+}
+
+#in-focus  h3{
+   margin: 0 0 0.5em 0;
+   color:#003399;
+}
+#in-focus div{
+    width: 48%;
+    margin: 2em 0 1em;
+}
+#highlight-1, #highlight-2, #highlight-3, #highlight-4{
+    width: 48%;
+    margin: 2em 0 1em;
+}
+
+#infocus-1, #infocus-3{
+    float: left;
+    padding-right: 2%;
+}
+
+#infocus-2, #infocus-4{
+    float: right;
+    padding-left: 2%;
+}
+
+
+
+/* jquerytools tabs css */
+/* root element for tabs  */
+ul.tabs {
+    list-style:none;
+    margin:0 !important;
+    padding:0;
+    border-bottom:1px solid #666;
+    height:30px;
+}
+
+/* single tab */
+#content ul.tabs li {
+    float:left;
+    text-indent:0;
+    padding:0;
+    margin:0 !important;
+    list-style-image:none !important;
+    display: inline;
+}
+#content ul.tabs li a {
+    border-bottom: 0;
+}
+/* link inside the tab. uses a background image */
+ul.tabs a {
+    background: url(http://jquerytools.org/media/img/tabs/blue.png) no-repeat -420px 0;
+    font-size:14px;
+    display:block;
+    height: 30px;
+    line-height:30px;
+    width: 134px;
+    text-align:center;
+    text-decoration:none;
+    color:#333;
+    padding:0px;
+    margin:0px;
+    position:relative;
+    top:1px;
+}
+
+ul.tabs a:active {
+    outline:none;
+}
+
+/* when mouse enters the tab move the background image */
+ul.tabs a:hover {
+    background-position: -420px -31px;
+    color:#fff;
+}
+
+/* active tab uses a class name "current". its highlight is also done by moving the background image. */
+ul.tabs a.current, ul.tabs a.current:hover, ul.tabs li.current a {
+    background-position: -420px -62px;
+    cursor:default !important;
+    color:#000 !important;
+}
+
+/* Different widths for tabs: use a class name: w1, w2, w3 or w2 */
+
+
+/* width 1 */
+ul.tabs a.s { background-position: -553px 0; width:81px; }
+ul.tabs a.s:hover { background-position: -553px -31px; }
+ul.tabs a.s.current  { background-position: -553px -62px; }
+
+/* width 2 */
+ul.tabs a.l { background-position: -248px -0px; width:174px; }
+ul.tabs a.l:hover { background-position: -248px -31px; }
+ul.tabs a.l.current { background-position: -248px -62px; }
+
+
+/* width 3 */
+ul.tabs a.xl { background-position: 0 -0px; width:248px; }
+ul.tabs a.xl:hover { background-position: 0 -31px; }
+ul.tabs a.xl.current { background-position: 0 -62px; }
+
+
+/* initially all panes are hidden */
+.panes .pane {
+    display:none;
+}
+div.panes > div { padding: 1em;}
+ /* end jquerytools tabs css */
+
+div.panes > div.overview {
+    width: 65%;
+    float: left;
+}
+
+/* tool examples */
+div.examples-portlet {
+    width: 40%;
+    float: right;
+    margin: 0 0 2em 2em;
+}
+div.examples-portlet > h3 {
+    background-color: #DDDDDD;
+    color: #003399;
+    font-weight: normal;
+    line-height: 2em;
+    margin-left: -1em;
+    margin-right: -1em;
+    padding-left: 5px;
+}
+.toolexample-content {
+    margin-top: 1em;
+}
+#content .download-links {
+    list-style: none;
+}
+#content ul#examplelist {
+    margin-left: 0;
+    padding: 0 1.25em 1.25em;
+    background-color: #EEEEEE;
+}
+#examplelist li:first-child {
+    border-top:0;
+}
+#examplelist li {
+    display: block;
+    padding: 1.5em 0 0 0 ;
+    clear: both;
+}
+#content a.exampleHeading {
+    float: left;
+    padding-right: 3%;
+    width: 47%;
+    color: black;
+    font-weight: bold;
+    font-size: 90%;
+    border: none !important;
+}
+.exampleImage {
+    float: left;
+    width: 50%;
+    padding-top: 0.3em;
+}
+#content .exampleImage a{
+    float: left;
+    width: 100%;
+    border: none !important;
+}
+.exampleImage img {
+    float: left;
+    height: auto;
+    width: 100%;
+}
+.exampleDescription {
+    font-size: 90%;
+    margin-top: 0.5em;
+}
+
+
+body.template-toolexamples div.overlay {
+    font-size: 100%;
+}
+
+body.template-toolexamples #highlightsContainer {
+    display: none;
+}
+/* end exampleslist */
+
+
+/* On search results page don't display icons for content types
+  until we have meaningful icons for ALL content types
+  (we will later remove this rule) */
+#search-results dl.searchResults > dt > img {
+    display: none;
+}
+
+/* collapsible */
+.readmore-item .description {
+    padding-bottom: 0.5em;
+}
+.collapse-head {
+    background: url('++resource++osha.campaigntoolkit.resources/arrow-up.png') no-repeat center right;
+    padding-right: 1em;
+}
+.collapse-head.collapsed {
+    background: url('++resource++osha.campaigntoolkit.resources/arrow-down.png') no-repeat center right;
+}
+/* Change request from ticket #6906 Increase readability */
+.template-readmore-view .readmore-item .description {
+    line-height: 25px;
+    font: italic 16px Georgia, "Times New Roman", Times, serif;
+    color: rgb(102, 102, 102);
+}

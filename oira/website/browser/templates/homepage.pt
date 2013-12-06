@@ -1,0 +1,63 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="osha">
+
+  <metal:javascript fill-slot="javascript_head_slot">
+    <script type="text/javascript"
+            src="++resource++osha.campaigntoolkit.resources/highlights-carousel.js"
+            language="javascript"></script>
+
+     <script type="text/javascript" language="javascript">
+         $(function() {
+             // setup ul.tabs to work as tabs for each div directly under
+             // div.panes
+             $("ul.tabs").tabs("div.panes > div");
+
+             // Hide the tool example highlights on the 'Examples' tab
+             $("a#examples").click(function(){
+                 $("#highlightsContainer").hide();
+             });
+             $("a#overview").click(function(){
+                 $("#highlightsContainer").show();
+             });
+       });
+   </script>
+  </metal:javascript>
+      <metal:css fill-slot='css_slot'>
+      </metal:css>
+
+<body>
+
+<div metal:fill-slot="main">
+    <div id="mainContent">
+
+      <h1 class="documentFirstHeading" id="parent-fieldname-title" tal:content="context/Title">
+      Find information for creating and running a Health &amp; Safety Campaign</h1>
+      <br/>
+
+      <div id="in-focus-container">
+        <h2>Getting your message across</h2>
+        <div class="in-focus" id="in-focus">
+            <div id="infocus-1">
+                <img src="++resource++osha.campaigntoolkit.resources/knot.jpg" width="150" title="Very likely copyrighted, not to use in production">
+                <h3><a rel="nofollow" href="how-to-run-a-campaign">How to run a campaign</a></h3>
+                <p>So you want to make a difference by campaigning for better workplace safety and health.
+                  Learn how to make your project successful.</p>
+                <p><a rel="nofollow" href="how-to-run-a-campaign">More&hellip;</a></p>
+            </div>
+            <div id="infocus-2">
+                <img src="++resource++osha.campaigntoolkit.resources/tools.jpg" width="150" title="Very likely copyrighted, not to use in production">
+                <h3><a rel="nofollow" href="tools">Tools</a></h3>
+                <p>Explore a collection of campaign tools and real world examples.
+                  All you need to run an effective promotional campaign is a click ahead.</p>
+                <p><a rel="nofollow" href="tools">More&hellip;</a></p>
+            </div>
+        </div>
+      </div>
+	<div class="visualClear"><!-- --></div>
+
+    </div>
+</div>
+</body>
+</html>

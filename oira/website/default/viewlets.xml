@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<object>
+  <hidden manager="plone.belowcontent" skinname="Campaign Toolkit">
+    <viewlet name="plone.nextprevious" />
+  </hidden>
+  <order manager="plone.belowcontentbody" skinname="Campaign Toolkit">
+    <viewlet name="osha.campaigntoolkit.toolexamples_viewlet" />
+  </order>
+  <order manager="plone.portalheader" skinname="Campaign Toolkit">
+    <viewlet name="plone.logo" />
+    <viewlet name="plone.skip_links" />
+    <viewlet name="osha.campaigntoolkit.toolexamples_viewlet" />
+    <viewlet name="plone.searchbox" />
+    <viewlet name="osha.campaigntoolkit.gotocorporate_viewlet" />
+  </order>
+  <hidden manager="plone.portalheader" skinname="Campaign Toolkit">
+    <viewlet name="plone.personal_bar" />
+    <viewlet name="plone.app.i18n.languageselector" />
+    <viewlet name="plone.global_sections" />
+  </hidden>
+</object>
+
