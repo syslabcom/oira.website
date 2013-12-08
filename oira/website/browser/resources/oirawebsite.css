@@ -73,7 +73,7 @@ dl.portlet a:hover {
 div#googletranslate{
     display: block;
     float: right;
-    margin: 1px 80px 0 201px;
+    margin: 1px 0 0 201px;
 }
 
 /* back to corporate site */
@@ -410,7 +410,8 @@ div#gotocorporate .external-marker{
     width: 190px;
 }
 #portal-header {
-    background: transparent url('++resource++oira.website.resources/headereurope.gif') no-repeat scroll right 6px;
+    /*background: transparent url('++resource++oira.website.resources/headereurope.gif') no-repeat scroll right 6px;*/
+    background: transparent url('++resource++oira.website.resources/logoosha_en.png') no-repeat scroll right 56px;
     height: 150px;
 }
 /*#portal-header:after {
