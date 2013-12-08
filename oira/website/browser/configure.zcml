@@ -8,7 +8,7 @@
 
     <browser:jbot
         directory="overrides"
-        layer=".interfaces.IOiRAWebLayer" />
+        layer=".interfaces.IOiRAWebsiteLayer" />
 
     <browser:resourceDirectory
         name="oira.website.resources"
