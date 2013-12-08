@@ -460,21 +460,21 @@ div#gotocorporate .external-marker{
     margin-right: 80px;
 }
 #content-views {
-    background-color: #1b259e;
+    background-color: #996699;
 }
 #contentActionMenus {
-    background-color: #1b259e;
+    background-color: #996699;
 }
 #contentActionMenus dl.actionMenu a, #contentActionMenus dl.actionMenu.activated dd {
-    background-color: #1b259e;
+    background-color: #996699;
 }
 #edit-bar {
-    background-color: #1b259e;
-    border: 0.25em solid #1b259e;
+    background-color: #996699;
+    border: 0.25em solid #996699;
     border-bottom: 0;
 }
 #contentActionMenus dl.actionMenu.activated dd {
-    border-bottom: 0.5em solid #1b259e;
+    border-bottom: 0.5em solid #996699;
 }
 #content .documentDescription, #content #description {
     font-style:italic;
