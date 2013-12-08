@@ -3,13 +3,18 @@
   <hidden manager="plone.belowcontent" skinname="OiRA Website">
     <viewlet name="plone.nextprevious" />
   </hidden>
+  <order manager="plone.belowcontentbody" skinname="OiRA Website">
+    <viewlet name="oira.website.googletranslate_viewlet" />
+  </order>
   <order manager="plone.portalheader" skinname="OiRA Website">
     <viewlet name="plone.logo" />
     <viewlet name="plone.skip_links" />
+    <viewlet name="oira.website.googletranslate_viewlet" />
     <viewlet name="plone.searchbox" />
     <viewlet name="oira.website.gotocorporate_viewlet" />
   </order>
   <hidden manager="plone.portalheader" skinname="OiRA Website">
+      <viewlet name="plone.searchbox" />
     <viewlet name="plone.personal_bar" />
     <viewlet name="plone.app.i18n.languageselector" />
     <viewlet name="plone.global_sections" />

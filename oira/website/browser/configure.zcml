@@ -15,5 +15,22 @@
         directory="resources"
         />
 
+    <browser:viewlet
+        name="oira.website.gotocorporate_viewlet"
+        for="*"
+        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+        class=".viewlets.GotocorporateViewlet"
+        template="templates/gotocorporate_viewlet.pt"
+        permission="zope2.View"
+        />
+		
+    <browser:viewlet
+        name="oira.website.googletranslate_viewlet"
+        for="*"
+        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+        class=".viewlets.GoogletranslateViewlet"
+        template="templates/googletranslate_viewlet.pt"
+        permission="zope2.View"
+        />
 
 </configure>
