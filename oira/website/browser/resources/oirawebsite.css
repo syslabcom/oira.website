@@ -26,7 +26,10 @@ h2 {
 h3 { font-size: 100%;}
 
 #content a:hover, dl.portlet a:hover {
-    color: #003399 !important;
+    color: #996699 !important;
+}
+#content a:visited, dl.portlet a:visited {
+    color: #996699 !important;	
 }
 dl.portlet a.navTreeCurrentNode {
     border-left: 1em solid !important;
@@ -45,13 +48,13 @@ dl.portlet a.navTreeItemInPath {
 
 #content a:link,
 dl.portlet a:link {
-    color: #003399;
-    border-bottom: 0.1em solid #003399;
+    color: #996699;
+    border-bottom: 0.1em solid #996699;
 }
 
 dl.portlet a:visited {
-    color: #003399;
-    border-bottom: 0.1em solid #003399;
+    color: #996699;
+    border-bottom: 0.1em solid #996699;
 }
 #content a:visited {
     color: #668899;
@@ -289,11 +292,11 @@ div#gotocorporate .external-marker{
 
 #content .button.darkblue {
     color: #d9eef7 !important;
-    border: solid 1px #003399;
+    border: solid 1px #996699;
     background: #999ada;
-    background: -webkit-gradient(linear, left top, left bottom, from(#999ada), to(#003399));
-    background: -moz-linear-gradient(top,  #999ada,  #003399);
-    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#999ada', endColorstr='#003399');
+    background: -webkit-gradient(linear, left top, left bottom, from(#999ada), to(#996699));
+    background: -moz-linear-gradient(top,  #999ada,  #996699);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#999ada', endColorstr='#996699');
 }
 #content .button.darkblue:hover {
     background: #52126d;
@@ -303,9 +306,9 @@ div#gotocorporate .external-marker{
 }
 #content .button.darkblue:active {
     color: #80bed6;
-    background: -webkit-gradient(linear, left top, left bottom, from(#003399), to(#999ada));
-    background: -moz-linear-gradient(top,  #003399, #999ada);
-    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#003399', endColorstr='#999ada');
+    background: -webkit-gradient(linear, left top, left bottom, from(#996699), to(#999ada));
+    background: -moz-linear-gradient(top,  #996699, #999ada);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#996699', endColorstr='#999ada');
 }
 
 /* rosy */
@@ -604,7 +607,7 @@ body.section-front-page h1.documentFirstHeading {
 
 #highlights h3{
     font-size: 1.4em;
-    color: #003399;
+    color: #996699;
     margin: 0;
 }
 #highlights-1, #highlights-2, #highlights-3, #highlights-4 {
@@ -638,7 +641,7 @@ body.section-front-page h1.documentFirstHeading {
 }
 
 #highlights-tabs li:hover a{
-    color: #003399;
+    color: #996699;
 }
 
 #highlights-tabs li.ui-state-active {
@@ -677,7 +680,7 @@ body.section-front-page h1.documentFirstHeading {
 
 #in-focus  h3{
    margin: 0 0 0.5em 0;
-   color:#003399;
+   color:#996699;
 }
 #in-focus div{
     width: 48%;
@@ -796,7 +799,7 @@ div.examples-portlet {
 }
 div.examples-portlet > h3 {
     background-color: #DDDDDD;
-    color: #003399;
+    color: #996699;
     font-weight: normal;
     line-height: 2em;
     margin-left: -1em;
