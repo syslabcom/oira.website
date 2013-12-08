@@ -2,10 +2,10 @@
 <object name="portal_javascripts" meta_type="JavaScripts Registry">
  <javascript cacheable="True" compression="safe" cookable="True"
     enabled="True" expression=""
-    id="++resource++osha.campaigntoolkit.resources/highlights-carousel.js"
+    id="++resource++oira.website.resources/highlights-carousel.js"
     inline="False"/>
  <javascript cacheable="True" compression="safe" cookable="True"
     enabled="True" expression=""
-    id="++resource++osha.campaigntoolkit.resources/collapse.js"
+    id="++resource++oira.website.resources/collapse.js"
     inline="False"/>
 </object>
