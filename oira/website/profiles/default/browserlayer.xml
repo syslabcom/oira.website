@@ -1,0 +1,6 @@
+<layers>
+  <layer
+    name="oira.website"
+    interface="oira.website.browser.interfaces.IOiRAWebsiteLayer"
+  />
+</layers>
