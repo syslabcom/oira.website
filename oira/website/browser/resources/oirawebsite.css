@@ -1,18 +1,13 @@
 @font-face {
 	font-family: "Abadi";
-	src: url("++resource++osha.campaigntoolkit.resources/fonts/Abadi-MT-Std-Condensed Light.otf")
+	src: url("++resource++oira.website.resources/fonts/Abadi-MT-Std-Condensed Light.otf")
 }
 
 body {
-   /* background: url('++resource++osha.campaigntoolkit.resources/top.gif') repeat-x scroll left top transparent; */
+   /* background: url('++resource++oira.website.resources/top.gif') repeat-x scroll left top transparent; */
     font-family: Verdana, Helvetica, "Lucida Grande", Lucida, Arial, sans-serif;
 
 }
-/*
-body.template-homepage-view div#portal-column-content{
-    width: 600px;
-}
-*/
 body.template-homepage-view div#portal-breadcrumbs {
     display: none;
 }
@@ -30,9 +25,6 @@ h2 {
 }
 h3 { font-size: 100%;}
 
-/*dl.portlet ul.navTreeLevel1 .navTreeItem {
-    padding-left: 1.5em;
-}*/
 #content a:hover, dl.portlet a:hover {
     color: #003399 !important;
 }
@@ -385,7 +377,7 @@ div#gotocorporate .external-marker{
 /* end Button */
 
 #portal-logo {
-    background: url('++resource++osha.campaigntoolkit.resources/logoinner2.gif') no-repeat scroll right bottom white;
+    background: url('++resource++oira.website.resources/logoinner2.gif') no-repeat scroll right bottom white;
     padding: 4px 30px 10px 10px;
     float: left;
 	display: block;
@@ -394,7 +386,7 @@ div#gotocorporate .external-marker{
 }
 #portal-top {
     padding: 14px 0;
-	background: url('++resource++osha.campaigntoolkit.resources/logoinner.gif') no-repeat scroll 0 29px transparent;
+	background: url('++resource++oira.website.resources/logoinner.gif') no-repeat scroll 0 29px transparent;
 
 }
 #portal-top div.width-full {
@@ -415,7 +407,7 @@ div#gotocorporate .external-marker{
     width: 190px;
 }
 #portal-header {
-    background: transparent url('++resource++osha.campaigntoolkit.resources/headereurope.gif') no-repeat scroll right 6px;
+    background: transparent url('++resource++oira.website.resources/headereurope.gif') no-repeat scroll right 6px;
     height: 150px;
 }
 /*#portal-header:after {
@@ -455,7 +447,7 @@ div#gotocorporate .external-marker{
 }
 
 #visual-portal-wrapper-container{
-    background: transparent url('++resource++osha.campaigntoolkit.resources/top.gif') repeat-x scroll top left;
+    background: transparent url('++resource++oira.website.resources/top.gif') repeat-x scroll top left;
     margin: 0 auto;
     width: 100%;
 }
@@ -591,7 +583,7 @@ body.section-front-page h1.documentFirstHeading {
 
 #highlightsContainer {
    padding-bottom: 20px;
-   background: url("++resource++osha.campaigntoolkit.resources/highlights.gif") no-repeat bottom center;
+   background: url("++resource++oira.website.resources/highlights.gif") no-repeat bottom center;
    margin-bottom: 2em;
    font-size: 80%;
    line-height: 1.5em;
@@ -882,11 +874,11 @@ body.template-toolexamples #highlightsContainer {
     padding-bottom: 0.5em;
 }
 .collapse-head {
-    background: url('++resource++osha.campaigntoolkit.resources/arrow-up.png') no-repeat center right;
+    background: url('++resource++oira.website.resources/arrow-up.png') no-repeat center right;
     padding-right: 1em;
 }
 .collapse-head.collapsed {
-    background: url('++resource++osha.campaigntoolkit.resources/arrow-down.png') no-repeat center right;
+    background: url('++resource++oira.website.resources/arrow-down.png') no-repeat center right;
 }
 /* Change request from ticket #6906 Increase readability */
 .template-readmore-view .readmore-item .description {

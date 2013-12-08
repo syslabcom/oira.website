@@ -1,14 +1,13 @@
 <?xml version="1.0"?>
-<!--object name="portal_skins" allow_any="False" cookie_persistence="False"
-   default_skin="Campaign Toolkit">
+<object name="portal_skins" allow_any="False" cookie_persistence="False"
+   default_skin="OiRA Website">
 
- <object name="campaigntoolkit" meta_type="Filesystem Directory View"
-         directory="osha.campaigntoolkit:skins/campaigntoolkit"/>
+ <object name="oirawebsite" meta_type="Filesystem Directory View"
+         directory="oira.website:skins/oirawebsite"/>
 
 
- <skin-path name="Campaign Toolkit" based-on="Sunburst Theme">
-  <layer name="campaigntoolkit"
+ <skin-path name="OiRA Website" based-on="Sunburst Theme">
+  <layer name="oirawebsite"
      insert-after="custom"/>
  </skin-path>
 </object>
--->
