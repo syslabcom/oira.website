@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="oira.website">
+
+    <include package="z3c.jbot" file="meta.zcml" />
+
+    <browser:jbot
+        directory="overrides"
+        layer=".interfaces.IOiRAWebLayer" />
+
+    <browser:resourceDirectory
+        name="oira.website.resources"
+        directory="resources"
+        />
+
+
+</configure>

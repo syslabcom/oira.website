@@ -1,108 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?>
 <configure
     xmlns="http://namespaces.zope.org/zope"
-    xmlns:browser="http://namespaces.zope.org/browser"
-    i18n_domain="osha.campaigntoolkit">
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:grok="http://namespaces.zope.org/grok"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    i18n_domain="plone">
 
-    <include package="z3c.jbot" file="meta.zcml" />
+    <five:registerPackage package="." initialize=".initialize" />
 
-    <browser:jbot
-        directory="overrides"
-        layer=".interfaces.ICampaignToolkitLayer" />
+    <!-- Include configuration for dependencies listed in setup.py -->
+    <includeDependencies package="." />
+    <include package=".browser" />
+    <!--include package=".upgrades" /-->
 
-    <browser:resourceDirectory
-        name="osha.campaigntoolkit.resources"
-        directory="resources"
-        />
+    <grok:grok package="." />
 
-    <browser:page
-        for="*"
-        name="homepage-view"
-        class=".homepage.HomepageView"
-        template="templates/homepage.pt"
-        permission="zope2.View"
-        />
+    <i18n:registerTranslations directory="locales" />
 
-    <browser:page
-        for="osha.campaigntoolkit.toolexample.IToolExample"
-        name="toolexample-view"
-        class=".toolexample.ToolExampleView"
-        template="templates/toolexample.pt"
-        permission="zope2.View"
-        />
+    <include file="skins.zcml" />
 
-    <browser:page
-        for="Products.CMFCore.interfaces.IFolderish"
-        name="readmore-view"
-        class=".readmore.ReadMoreView"
-        template="templates/readmore_view.pt"
-        permission="zope2.View"
-        layer=".interfaces.ICampaignToolkitLayer"
-        />
-
-    <browser:menuItem
-        for="Products.CMFCore.interfaces.IFolderish"
-        menu="plone_displayviews"
-        title="Readmore view (with collapsible sections)"
-        action="@@readmore-view"
-        description="View for displaying the content of all pages in this folder on one page, with collapsible sections."
-        layer=".interfaces.ICampaignToolkitLayer"
-        />
-
-    <!-- two column overview for folders -->
-    <browser:page
-        for="Products.CMFCore.interfaces.IFolderish"
-        name="overview"
-        class=".overview.Overview"
-        template="templates/overview.pt"
-        permission="zope2.View"
-        />
-
-    <browser:menuItem
-        for="Products.CMFCore.interfaces.IFolderish"
-        menu="plone_displayviews"
-        title="Overview"
-        action="@@overview"
-        description="A two column overview"
-        />
-
-    <!-- viewlets -->
-    <browser:viewlet
-        name="osha.campaigntoolkit.toolexamples_highlights_viewlet"
-        for=".interfaces.ICanShowToolExamples"
-        manager="plone.app.layout.viewlets.interfaces.IBelowContent"
-        class=".toolexample.ToolExamplesHighlightsViewlet"
-        template="templates/toolexamples_highlights_viewlet.pt"
-        permission="zope2.View"
-        />
-
-    <browser:viewlet
-        name="osha.campaigntoolkit.toolexamples_viewlet"
-        for=" Products.ATContentTypes.interfaces.document.IATDocument"
-        manager="plone.app.layout.viewlets.interfaces.IAboveContentBody"
-        class=".toolexample.ToolExamplesViewlet"
-        template="templates/toolexamples_viewlet.pt"
-        permission="zope2.View"
-        />
-
-    <browser:viewlet
-        name="osha.campaigntoolkit.toolexamples_viewlet"
-        for="*"
-        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
-        class=".viewlets.GoogletranslateViewlet"
-        template="templates/googletranslate_viewlet.pt"
-        permission="zope2.View"
-        />
-
-    <browser:viewlet
-        name="osha.campaigntoolkit.gotocorporate_viewlet"
-        for="*"
-        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
-        class=".viewlets.GotocorporateViewlet"
-        template="templates/gotocorporate_viewlet.pt"
-        permission="zope2.View"
-        />
-    <!-- marker interfaces -->
-    <interface interface=".interfaces.ICanShowToolExamples" />
+  <genericsetup:registerProfile
+      name="default"
+      title="oira.website"
+      directory="profiles/default"
+      description='Extension profile for the "OiRA Website".'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
 
 </configure>
