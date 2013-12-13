@@ -12,6 +12,7 @@
     <!-- Include configuration for dependencies listed in setup.py -->
     <includeDependencies package="." />
     <include package=".browser" />
+
     <!--include package=".upgrades" /-->
 
     <grok:grok package="." />
