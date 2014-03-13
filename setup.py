@@ -31,6 +31,7 @@ setup(name='oira.website',
           'z3c.jbot',
           'Products.LoginLockout',
           'Products.PasswordStrength',
+          'collective.responsivetheme'
       ],
       extras_require={
           # list libs needed for testing this project
