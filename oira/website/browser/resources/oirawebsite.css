@@ -79,7 +79,7 @@ div#googletranslate{
 /* back to corporate site */
 div#gotocorporate {
     float:left;
-    margin-top: 56px;
+    margin: 56px 0 0 250px;
     font-size: 80%
 }
 
