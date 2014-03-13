@@ -909,7 +909,7 @@ body.template-toolexamples #highlightsContainer {
          width: 175px;
          height:130px;
     } 
-    #gotocorporate {
+    #gotocorporate, #googletranslate {
         display:none;
     }
     #portal-top: {
