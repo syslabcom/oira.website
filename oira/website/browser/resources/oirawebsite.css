@@ -890,3 +890,31 @@ body.template-toolexamples #highlightsContainer {
     font: italic 16px Georgia, "Times New Roman", Times, serif;
     color: rgb(102, 102, 102);
 }
+
+
+
+/* Media Queries */
+
+
+
+
+
+/*  * iPhone * */
+@media screen and (orientation:landscape) and (max-device-width: 480px), screen and (orientation:portrait) and  (max-device-width: 320px) {
+
+    #portal-logo  { 
+        background: none;
+    }
+     #portal-logo img {
+         width: 175px;
+         height:130px;
+    } 
+    #gotocorporate {
+        display:none;
+    }
+    #portal-top: {
+        background: none;
+    }
+
+
+} /*  * END iPhone * */
