@@ -891,30 +891,66 @@ body.template-toolexamples #highlightsContainer {
     color: rgb(102, 102, 102);
 }
 
+/* responsive */
+@media (max-width: 970px) {
+    #visual-portal-wrapper { width: 100%; }
 
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
 
-/* Media Queries */
+@media (max-width: 880px) {
+    #gotocorporate { display:none; }
+    table.invisible td { padding: 0.5em; }
+    table ul { margin-left: 0.5em; }
+}
 
+@media (max-width: 480px) {
+    #visual-portal-wrapper-container { background: none; }
 
-
-
-
-/*  * iPhone * */
-@media screen and (orientation:landscape) and (max-device-width: 480px), screen and (orientation:portrait) and  (max-device-width: 320px) {
-
-    #portal-logo  { 
+    #portal-logo  {
         background: none;
+        margin: 0;
+        padding-left: 5px;
     }
      #portal-logo img {
-         width: 175px;
-         height:130px;
-    } 
-    #gotocorporate, #googletranslate {
-        display:none;
+         height:90px;
+         width: auto;
     }
-    #portal-top: {
+
+    #portal-header {
+        background-size: 140px auto;
+        background-position: right 40px;
+        height: 120px;
+        margin-right: 10px;
+    }
+
+    #portal-top {
         background: none;
+        padding-top: 0;
+        margin-top: -28px;
     }
 
+    #portal-breadcrumbs {
+        background-color: #969;
+        padding: 5px;
+        margin: 0 -5px;
+        color: #444;
+    }
 
-} /*  * END iPhone * */
+    #portal-breadcrumbs a,
+    .breadcrumbSeparator { color: #DDD; }
+
+    div.overlay { font-size: 75%; }
+    div.overlay .field input[type="text"][size] { width: 100%; }
+    .pb-ajax > div {
+        width: auto;
+        margin: 0;
+    }
+
+    h3 img { margin-left: 5px; }
+    #content pre { white-space: normal; }
+}
+/* /responsive */
