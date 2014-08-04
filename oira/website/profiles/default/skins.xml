@@ -6,7 +6,7 @@
          directory="oira.website:skins/oirawebsite"/>
 
 
- <skin-path name="OiRA Website" based-on="Sunburst Theme">
+ <skin-path name="OiRA Website" based-on="Responsive Theme">
   <layer name="oirawebsite"
      insert-after="custom"/>
  </skin-path>

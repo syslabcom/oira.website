@@ -3,6 +3,6 @@
   <version>007</version>
   <dependencies>
     <dependency>profile-plone.app.dexterity:default</dependency>
-    <!--dependency>profile-collective.responsivetheme:default</dependency-->
+    <dependency>profile-collective.responsivetheme:default</dependency>
   </dependencies>
 </metadata>
