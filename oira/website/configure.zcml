@@ -21,12 +21,12 @@
 
     <include file="skins.zcml" />
 
-  <genericsetup:registerProfile
-      name="default"
-      title="oira.website"
-      directory="profiles/default"
-      description='Extension profile for the "OiRA Website".'
-      provides="Products.GenericSetup.interfaces.EXTENSION"
-      />
+    <genericsetup:registerProfile
+        name="default"
+        title="oira.website"
+        directory="profiles/default"
+        description='Extension profile for the "OiRA Website".'
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
 
 </configure>

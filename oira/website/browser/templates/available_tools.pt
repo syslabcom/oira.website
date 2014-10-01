@@ -1,0 +1,295 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="osha">
+
+<body>
+    <p> </p>
+    <p class="callout"><strong>All published tools by different sectors in different EU Member states and EU organisations<br /></strong></p>
+    <p><em>This page is constantly updated with newly published tools</em></p>
+    <p>To access the tool click on the link and register (you just need a valid email address)</p>
+    <table border="0" class="listing">
+    <tbody>
+    <tr><th>Country</th><th>Sector</th><th>Language</th></tr>
+    <tr>
+    <td><b>Europe</b></td>
+    <td class="external-link"><a class="external-link" href="http://client.oiraproject.eu/eu/leather-tanning/leather-tanning-draft-risk-assessment-tool/start">Leather and tanning</a></td>
+    <td><span class="short_text" id="result_box"><span class="hps" title="Click for alternate translations"></span></span>English</td>
+    </tr>
+    <tr>
+    <td></td>
+    <td class="external-link"><a class="external-link" href="https://client.oiraproject.eu/eu/eu-private-security/private-security-eu/">Private Security</a></td>
+    <td><span class="short_text" id="result_box"><span class="hps" title="Click for alternate translations"></span></span>English</td>
+    </tr>
+    <tr>
+    <td></td>
+    <td class="external-link"><a class="external-link" href="https://client.oiraproject.eu/eu/eu-cleaning/eu-cleaning/" target="_self" title="">Cleaning</a></td>
+    <td>English</td>
+    </tr>
+    <tr>
+    <td><b>Belgium</b></td>
+    <td class="external-link"><a class="external-link" href="https://client.oiraproject.eu/be/coiffure/oira-coiffure">Coiffure</a> (hairdressing)</td>
+    <td><span class="short_text" id="result_box"><span class="hps" title="Click for alternate translations"></span></span><span class="short_text" id="result_box"><span class="hps" title="Click for alternate translations">Français</span></span> (FR)</td>
+    </tr>
+    <tr>
+    <td></td>
+    <td><a class="external-link" href="https://client.oiraproject.eu/be/coiffure/oira-kappers">Kappers</a> (hairdressing)</td>
+    <td><span class="short_text" id="result_box"><span class="hps" title="Click for alternate translations">Nederlands</span></span> (NL)</td>
+    </tr>
+    <tr>
+    <td><b>Bulgaria</b></td>
+    <td><a class="external-link" href="https://client.oiraproject.eu/be/coiffure/oira-kappers"></a><a href="https://client.oiraproject.eu/bg/gorsko-stopanstvo/gorsko-stopanstvo" target="_blank">Горско стопанство</a> (forestry)</td>
+    <td><span class="short_text"><span class="hps" title="Click for alternate translations">Български (BG)</span></span></td>
+    </tr>
+    <tr>
+    <td></td>
+    <td>
+    <p><a href="https://client.oiraproject.eu/bg/stroitelstvo/stroitelstvo" target="_blank">Строителство</a> (construction)</p>
+    </td>
+    <td>Български (BG)</td>
+    </tr>
+    <tr>
+    <td></td>
+    <td>
+    <p><a href="https://client.oiraproject.eu/bg/dalekosaobshteniya/dalekosaobshteniya" target="_blank">Далекосъобщения</a> (telecommunications)</p>
+    </td>
+    <td>Български (BG)</td>
+    </tr>
+    <tr>
+    <td></td>
+    <td>
+    <p><a href="https://client.oiraproject.eu/bg/darzhavno-upravlenie-1/darzhavno-upravlenie" target="_blank">Държавно управление</a> (public administration)</p>
+    </td>
+    <td>Български (BG)</td>
+    </tr>
+    <tr>
+    <td></td>
+    <td><a href="https://client.oiraproject.eu/bg/obrazovanie-1/obrazovanie" target="_blank">Образование</a> (education)</td>
+    <td>Български (BG)</td>
+    </tr>
+    <tr>
+    <td></td>
+    <td>
+    <p><a href="https://client.oiraproject.eu/bg/mediko-sotsialni-grizhi-s-nastanyavane/" target="_blank">Медико-социални грижи с настаняване</a> (residential care activities)</p>
+    </td>
+    <td>Български (BG)</td>
+    </tr>
+    <tr>
+    <td></td>
+    <td>
+    <p><a href="https://client.oiraproject.eu/bg/proizvodstvo-na-obleklo/proizvodstvo-na-obleklo" target="_blank">Производство на облекло</a> (manufacture of wearing apparel)</p>
+    </td>
+    <td>Български (BG)</td>
+    </tr>
+    <tr>
+    <td></td>
+    <td>
+    <p><a href="https://client.oiraproject.eu/bg/voden-transport/voden-transport" target="_blank">Воден транспорт  </a>(water transport)</p>
+    </td>
+    <td>Български (BG)</td>
+    </tr>
+    <tr>
+    <td></td>
+    <td>
+    <p><a href="https://client.oiraproject.eu/bg/vzdushien-transport/vazdushen-transport" target="_blank">Въздушен транспорт</a> (air transport)</p>
+    </td>
+    <td>Български (BG)</td>
+    </tr>
+    <tr>
+    <td></td>
+    <td>
+    <p><a class="external-link" href="https://client.oiraproject.eu/bg/proizvodstvo-na-khimichni-produkti/proizvodstvo-na-khimichni-produkti-1" target="_parent" title="">Производство на химични продукти</a> (manufacture of chemical products)</p>
+    </td>
+    <td>Български (BG)</td>
+    </tr>
+    <tr>
+    <td></td>
+    <td>
+    <p><a class="external-link" href="https://client.oiraproject.eu/bg/proizvodstvo-na-izdeliya-ot-kauchuk-i-plastmasi/proizvodstvo-na-izdeliya-ot-kauchuk" target="_blank" title="">Производство на изделия от каучук</a> (manufacture of rubber products)</p>
+    </td>
+    <td>Български (BG)</td>
+    </tr>
+    <tr>
+    <td></td>
+    <td>
+    <p><a class="external-link" href="https://client.oiraproject.eu/bg/proizvodstvo-na-izdeliya-ot-kauchuk-i-plastmasi/proizvodstvo-na-izdeliya-ot-plastmasi" target="_blank" title="">Производство на изделия от пластмаси</a>   (manufacture of plastic products)</p>
+    </td>
+    <td>Български (BG)</td>
+    </tr>
+    <tr>
+    <td><b>Cyprus</b></td>
+    <td><a class="external-link" href="http://client.oiraproject.eu/cy/hairdressers/cyprus_hairdressers_el/">Κομμωτήρια</a> (hairdressing)</td>
+    <td><span class="short_text" id="result_box"><span class="hps" title="Click for alternate translations">ελληνικά</span></span> (GR)</td>
+    </tr>
+    <tr>
+    <td></td>
+    <td><a class="external-link" href="http://client.oiraproject.eu/cy/civil-service/demosia-dioikese/" target="_self" title="">Εργασίες Γραφείου - Δημόσια Διοίκηση</a> (office work)</td>
+    <td><span class="short_text" id="result_box"><span class="hps" title="Click for alternate translations"></span></span><span class="short_text" id="result_box"><span class="hps" title="Click for alternate translations">ελληνικά</span></span> (GR)</td>
+    </tr>
+    <tr>
+    <td></td>
+    <td><a class="external-link" href="https://client.oiraproject.eu/cy/etaireies-trophodosias-catering/klados-etaireion-trophodosias-catering" target="_self" title="">Κλάδος εταιρειών τροφοδοσίας </a><span class="external-link"> (catering)</span></td>
+    <td><span class="short_text"><span class="hps" title="Click for alternate translations"><span class="short_text" id="result_box"><span class="hps" title="Click for alternate translations">ελληνικά</span></span> (GR)</span></span></td>
+    </tr>
+    <tr>
+    <td></td>
+    <td><a class="external-link" href="https://client.oiraproject.eu/cy/kreopoleia/kreopoleia" target="_self" title=""><span class="external-link"></span>Κρεοπωλεια  </a>(butchers)</td>
+    <td><span class="short_text"><span class="hps" title="Click for alternate translations"><span class="short_text" id="result_box"><span class="hps" title="Click for alternate translations">ελληνικά</span></span> (GR)</span></span></td>
+    </tr>
+    <tr>
+    <td><b>Czech Republic</b></td>
+    <td><a class="external-link" href="http://client.oiraproject.eu/cy/civil-service/demosia-dioikese/"></a><span class="external-link"><a class="external-link" href="https://client.oiraproject.eu/cz/kadernicke-sluzby/kadernicke-sluzby" target="_self" title="">KADEŘNICKÉ SLUŽBY</a> (hairdressing)</span></td>
+    <td><span class="short_text"><span class="hps" title="Click for alternate translations"><span class="reference internal">Čeština (CS</span>)</span></span></td>
+    </tr>
+    <tr>
+    <td><b>France</b></td>
+    <td><a class="external-link" href="http://client.oiraproject.eu/fr/transportroutier/transporoutier-2-parametres">Transport routier</a> (road transport)</td>
+    <td><span class="short_text" id="result_box"><span class="hps" title="Click for alternate translations"></span></span>Français (FR)</td>
+    </tr>
+    <tr>
+    <td></td>
+    <td><a class="external-link" href="https://client.oiraproject.eu/fr/restauration/restauration-traditionnelle/">Restauration traditionelle</a> (catering sector)</td>
+    <td><span class="short_text" id="result_box"><span class="hps" title="Click for alternate translations"></span></span>Français (FR)</td>
+    </tr>
+    <tr>
+    <td><b>Greece</b></td>
+    <td><a class="external-link" href="https://client.oiraproject.eu/gr/catering/ergaleio-oira-gia-tin-ektimisi-kindynoy-ston-klado-ton-etaireion-trofodosias-catering">Κλάδος εταιρειών τροφοδοσίας </a> (catering sector)</td>
+    <td><br />ελληνικά (GR)</td>
+    </tr>
+    <tr>
+    <td><b></b></td>
+    <td>
+    <p><a href="https://client.oiraproject.eu/gr/commercial-shops/emporika-katastimata">Κλάδος εμπορικών καταστημάτω  </a>(commercial shops)</p>
+    </td>
+    <td>ελληνικά (GR)</td>
+    </tr>
+    <tr>
+    <td></td>
+    <td>
+    <p><a href="https://client.oiraproject.eu/gr/hairdressers/hairdressing-salons">Κλάδος κομμωτηρίων</a> (hairdressing)</p>
+    </td>
+    <td>ελληνικά (GR)</td>
+    </tr>
+    <tr>
+    <td><b>Latvia</b></td>
+    <td><a class="external-link" href="https://client.oiraproject.eu/lv/latvia-test/darbs-biroja/@@login?came_from=https%3A%2F%2Fclient.oiraproject.eu%2Flv%2Flatvia-test%2Fdarbs-biroja%2F">Darbs birojā</a> (office work)</td>
+    <td>Latviešu (LV)</td>
+    </tr>
+    <tr>
+    <td><b></b></td>
+    <td><span class="external-link"><a class="external-link" href="https://client.oiraproject.eu/lv/latvia-test/izglitibas-iestades-1" target="_blank" title="izglitibas iestades">Izglītības iestādes</a> (educational establishments)</span></td>
+    <td>Latviešu (LV)</td>
+    </tr>
+    <tr>
+    <td><b>Lithuania</b></td>
+    <td><a class="external-link" href="https://client.oiraproject.eu/lt/lt-test-sector/automobiliu-remontas">Automobilių remontas</a> (car repair)</td>
+    <td>Lietuviškai (LT)</td>
+    </tr>
+    <tr>
+    <td><b>Netherlands</b></td>
+    <td><a class="external-link" href="https://client.oiraproject.eu/nl/generic/generic-tool-in-english"> Generic sector</a></td>
+    <td>English</td>
+    </tr>
+    <tr>
+    <td><b>Portugal</b></td>
+    <td><a class="external-link" href="https://client.oiraproject.eu/pt/cabeleireiro/cabeleireirofinal">Cabeleireiro</a> (hairdressing)</td>
+    <td>Português (PT)</td>
+    </tr>
+    <tr>
+    <td><b><b>Spain</b></b></td>
+    <td><a class="external-link" href="https://client.oiraproject.eu/pt/cabeleireiro/cabeleireirofinal"></a><a class="external-link" href="https://client.oiraproject.eu/es/adoberies/adoberies">Adoberies</a> (leather &amp; tanning)</td>
+    <td>Català (Catalan)</td>
+    </tr>
+    <tr>
+    <td><b><b></b></b></td>
+    <td><a class="external-link" href="https://client.oiraproject.eu/es/autoescuelas/autoescuelas">Autoescuelas</a> (driving schools)</td>
+    <td>Español (ES)</td>
+    </tr>
+    </tbody>
+    </table>
+    <p> </p>
+    <p class="callout"><strong>Tools under development</strong></p>
+    <table border="0" class="listing">
+    <tbody>
+    <tr><th>Country</th><th>Sector</th></tr>
+    <tr>
+    <td><b>Europe</b></td>
+    <td>
+    <p>Live performance</p>
+    <p>Cleaning</p>
+    <p>Maritime transport</p>
+    <p>Hairdressing</p>
+    </td>
+    </tr>
+    <tr>
+    <td><b>Belgium</b></td>
+    <td>Woodworking</td>
+    </tr>
+    <tr>
+    <td><b>Bulgaria</b></td>
+    <td>21 tools, various sectors</td>
+    </tr>
+    <tr>
+    <td><b>Greece</b></td>
+    <td>
+    <p>Butchers</p>
+    <p>Bakeries</p>
+    <p>Woodworking workshops</p>
+    <p>Pharmacies</p>
+    <p>Laundry sector</p>
+    <p>Office work</p>
+    <p>Working in offices</p>
+    </td>
+    </tr>
+    <tr>
+    <td><b>Latvia</b></td>
+    <td>
+    <p>Educational establishments</p>
+    <p>Agriculture</p>
+    </td>
+    </tr>
+    <tr>
+    <td><b>Lithuania</b></td>
+    <td>
+    <p>Woodworking</p>
+    <p>Working in offices</p>
+    </td>
+    </tr>
+    <tr>
+    <td><b>Malta</b></td>
+    <td>
+    <p>Working in offices</p>
+    </td>
+    </tr>
+    <tr>
+    <td><b>Portugal</b></td>
+    <td>
+    <p>Hairdressing</p>
+    <p>Road transport</p>
+    <p>Leather and tanning</p>
+    </td>
+    </tr>
+    <tr>
+    <td><b>Slovenia</b></td>
+    <td>
+    <p>Working in offices</p>
+    <p>Generic</p>
+    <p>Cleaning</p>
+    <p>Hairdressing</p>
+    <p>Psychosocial risks</p>
+    <p>Road transport</p>
+    <p>Woodworking</p>
+    </td>
+    </tr>
+    <tr>
+    <td><b>Spain</b></td>
+    <td>
+    <p>Hairdressing</p>
+    <p>Road transport</p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    <p class=" "><strong><br /></strong></p>
+</body>
+</html>
