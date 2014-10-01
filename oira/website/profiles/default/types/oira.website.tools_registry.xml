@@ -1,33 +1,33 @@
 <?xml version="1.0"?>
-<object name="oira.website.tools_storage" meta_type="Dexterity FTI"
+<object name="oira.website.tools_registry" meta_type="Dexterity FTI"
    i18n:domain="oira.website" xmlns:i18n="http://xml.zope.org/namespaces/i18n">
 
  <!-- Basic metadata -->
- <property name="title" i18n:translate="">OiRA Tools</property>
+ <property name="title" i18n:translate="">OiRA Tools Registry</property>
  <property name="description" i18n:translate="This content type allows you to specify the tools that will appear in the OiRA Tools page."></property>
  <property name="allow_discussion">True</property>
  <property name="immediate_view">view</property>
  <property name="global_allow">False</property>
  <property name="filter_content_types">True</property>
- <property name="allowed_content_types">
-     <element value="File" />
- </property>
+ <property name="allowed_content_types"></property>
 
  <!-- schema interface -->
- <property name="schema">oira.website.tools_storage.IToolsStorage</property>
+ <property name="schema">oira.website.content.tools.IToolsRegistry</property>
 
  <!-- class used for content items -->
  <property name="klass">plone.dexterity.content.Container</property>
 
  <!-- add permission -->
- <property name="add_permission">oira.website.AddOrganisation</property>
+ <property name="add_permission">cmf.ManagePortal</property>
 
  <!-- enabled behaviors -->
  <property name="behaviors">
-<!--      <element value="plone.multilingualbehavior.interfaces.IDexterityTranslatable" />
+    <!--      
+     <element value="plone.multilingualbehavior.interfaces.IDexterityTranslatable" />
      <element value="plone.app.content.interfaces.INameFromTitle" />
      <element value="plone.app.referenceablebehavior.referenceable.IReferenceable" />
- --> </property>
+    --> 
+ </property>
 
  <!-- View information -->
  <property name="default_view">view</property>

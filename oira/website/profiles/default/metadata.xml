@@ -1,8 +1,9 @@
 <?xml version="1.0"?>
 <metadata>
-  <version>007</version>
+  <version>8</version>
   <dependencies>
     <dependency>profile-plone.app.dexterity:default</dependency>
     <dependency>profile-collective.responsivetheme:default</dependency>
+    <dependency>profile-collective.z3cform.datagridfield:default</dependency>
   </dependencies>
 </metadata>

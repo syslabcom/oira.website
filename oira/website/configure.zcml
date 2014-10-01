@@ -10,16 +10,16 @@
     <five:registerPackage package="." initialize=".initialize" />
 
     <!-- Include configuration for dependencies listed in setup.py -->
-    <includeDependencies package="." />
     <include package=".browser" />
-
-    <!--include package=".upgrades" /-->
-
+    <include package=".upgrades" />
+    <includeDependencies package="." />
     <grok:grok package="." />
-
     <i18n:registerTranslations directory="locales" />
 
     <include file="skins.zcml" />
+
+    <utility name="oira.languages"
+             factory=".vocabularies.LanguagesVocabulary" />
 
     <genericsetup:registerProfile
         name="default"
