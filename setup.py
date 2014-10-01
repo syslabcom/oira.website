@@ -25,13 +25,14 @@ setup(name='oira.website',
       include_package_data=True,
       zip_safe=False,
       install_requires=[
-          'setuptools',
-          'plone.api',
-          'plone.app.dexterity [grok]',
-          'z3c.jbot',
-          'Products.LoginLockout',
-          'Products.PasswordStrength',
-          'collective.responsivetheme'
+            'setuptools',
+            'plone.api',
+            'plone.app.dexterity [grok]',
+            'z3c.jbot',
+            'Products.LoginLockout',
+            'Products.PasswordStrength',
+            'collective.responsivetheme',
+            'collective.z3cform.datagridfield'
       ],
       extras_require={
           # list libs needed for testing this project
