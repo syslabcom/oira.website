@@ -17,6 +17,8 @@ def add_tools_registry(context):
         on the OiRA Tools page.
     """
     api.portal.get_tool('portal_setup').runImportStepFromProfile(
+                'profile-oira.website:default', 'jsregistry')
+    api.portal.get_tool('portal_setup').runImportStepFromProfile(
                 'profile-oira.website:default', 'typeinfo')
     site = api.portal.get()
     # FIXME: id must be available-tools

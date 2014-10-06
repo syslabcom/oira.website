@@ -953,4 +953,36 @@ body.template-toolexamples #highlightsContainer {
     h3 img { margin-left: 5px; }
     #content pre { white-space: normal; }
 }
+
+.tool-sector {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.tool-filters {
+    padding: 5px;
+}
+
+.tool-country {
+    background-color: #eee;
+    padding: 5px;
+}
+
+.tool-language {
+    float: right;
+    padding-right: 10px;
+}
+
+.tools-list {
+    clear: both;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+    clear: right;
+}
 /* /responsive */

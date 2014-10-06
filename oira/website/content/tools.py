@@ -36,17 +36,6 @@ def CustomTableWidgetFactory(field, request):
 
 
 class ITableRowSchema(form.Schema):
-    label = schema.TextLine(
-        title=u"Title",
-        required=False,
-    )
-    url = schema.URI(
-        title=u"URL",
-        required=False,
-    )
-
-
-class ITableRowSchema(form.Schema):
     country = schema.Choice(
         title=u"Country",
         vocabulary=vocabularies.countries,
