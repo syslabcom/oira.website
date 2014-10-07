@@ -23,6 +23,7 @@ class OiRAToolsView(grok.View):
         for t in self.context.tools:
             tdict[t['country']]['tools'].append(t)
         for key, value in tdict.items():
+            value['tools'] = sorted(value['tools'], key=lambda t: t['sector'])
             langs = list(set([t['language'] for t in value['tools']]))
             if not len(langs):
                 continue
