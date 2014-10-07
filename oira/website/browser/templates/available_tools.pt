@@ -23,8 +23,7 @@
             <option value="all">All languages</option>
             <option tal:repeat="lang python:view.languages.items()"
                 tal:content="python:lang[1]"
-                tal:attributes="value python:lang[0];
-                                selected python:lang[0] == current_language"></option>
+                tal:attributes="value python:lang[0]"></option>
         </select>
     </form>
 
@@ -39,8 +38,8 @@
                 tal:attributes="data-pat-depends python:tools_by_country[country]['condition']">Europe</dt>
 
             <tal:loop repeat="tool tools">
-                <dd class="pat-depends" 
-                    tal:attributes="data-pat-depends string:action:show;; condition:(country='${country}' or country=all) and (language='${tool/language}' or language=all)"> 
+                <dd class="pat-depends"
+                    tal:attributes="data-pat-depends string:action:show;; condition:(country='${country}' or country=all) and (language='${tool/language}' or language=all)">
                     <a class="tool-sector" tal:content="tool/sector" tal:condition="tool/url" tal:attributes="href tool/url">Hairdressers</a>
                     <span class="tool-sector" tal:content="tool/sector" tal:condition="not: tool/url">Hairdressers</span>
                     <tal:if_description condition="tool/sector_description">
