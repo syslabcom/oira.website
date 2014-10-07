@@ -1,7 +1,7 @@
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
-from collections import OrderedDict
+from oira.website import OrderedDict
 from five import grok
-from oira.website import vocabularies 
+from oira.website import vocabularies
 from oira.website.content.tools import IToolsRegistry
 from plone import api
 from plone.memoize.instance import memoize
@@ -18,7 +18,7 @@ class OiRAToolsView(grok.View):
     vocabularies = vocabularies
 
     def render(self):
-        self.__populate();
+        self.__populate()
         return self._template()
 
     @memoize

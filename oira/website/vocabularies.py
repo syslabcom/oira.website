@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
-from collections import OrderedDict
 from oira.website import _
+from oira.website import OrderedDict
 from zope.interface import implementer
 from zope.schema.interfaces import IVocabularyFactory
 from zope.schema.vocabulary import SimpleVocabulary, SimpleTerm
-from plone import api
 
 BASE_COUNTRIES = [
     'Austria',
@@ -75,6 +74,7 @@ LANGUAGES = OrderedDict(sorted({
     "sl": "Slovenian",
     "sv": "Swedish"
 }.items(), key=lambda t: t[0]))
+
 
 @implementer(IVocabularyFactory)
 class LanguagesVocabulary(object):
