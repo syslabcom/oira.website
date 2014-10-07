@@ -77,13 +77,12 @@ class IToolsRegistry(model.Schema):
         title=u"Text",
         required=False,
         default=u"""
-        <p class="callout"><strong>All published tools by different sectors in
-        different EU Member states and EU organisations<br /></strong></p>
-        <p><em>This page is constantly updated with newly published
-        tools</em></p>
-        <p>To access the tool click on the link and register (you just need a
-        valid email address)</p>
-        """
+<p class="callout"><strong>All published tools by different sectors in
+different EU Member states and EU organisations<br /></strong></p>
+<p><em>This page is constantly updated with newly published
+tools</em></p>
+<p>To access the tool click on the link and register (you just need a
+valid email address)</p>"""
     )
     tools = schema.List(
         title=u"Available OiRA Tools",

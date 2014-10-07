@@ -4,6 +4,7 @@ from oira.website import _
 from zope.interface import implementer
 from zope.schema.interfaces import IVocabularyFactory
 from zope.schema.vocabulary import SimpleVocabulary, SimpleTerm
+from plone import api
 
 BASE_COUNTRIES = [
     'Austria',

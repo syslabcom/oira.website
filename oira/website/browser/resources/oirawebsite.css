@@ -891,6 +891,44 @@ body.template-toolexamples #highlightsContainer {
     color: rgb(102, 102, 102);
 }
 
+/* BEGIN: Available tools page */
+.tool-sector {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.tool-filters {
+    padding: 5px;
+}
+
+.tool-filters select {
+    padding: 3px;
+}
+
+.tool-country {
+    background-color: #eee;
+    padding: 5px;
+}
+
+.tool-language {
+    float: right;
+    padding-right: 10px;
+}
+
+.tools-list {
+    clear: both;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+    clear: right;
+}
+/* END: Available tools page */
+
 /* responsive */
 @media (max-width: 970px) {
     #visual-portal-wrapper { width: 100%; }
@@ -954,35 +992,4 @@ body.template-toolexamples #highlightsContainer {
     #content pre { white-space: normal; }
 }
 
-.tool-sector {
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.tool-filters {
-    padding: 5px;
-}
-
-.tool-country {
-    background-color: #eee;
-    padding: 5px;
-}
-
-.tool-language {
-    float: right;
-    padding-right: 10px;
-}
-
-.tools-list {
-    clear: both;
-}
-
-.left {
-    float: left;
-}
-
-.right {
-    float: right;
-    clear: right;
-}
 /* /responsive */
