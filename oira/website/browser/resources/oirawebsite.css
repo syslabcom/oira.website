@@ -928,6 +928,10 @@ body.template-toolexamples #highlightsContainer {
     float: right;
     clear: right;
 }
+
+#content h2.subheading{
+    margin-bottom: 10px;
+}
 /* END: Available tools page */
 
 /* responsive */

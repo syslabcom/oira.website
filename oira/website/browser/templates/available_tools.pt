@@ -27,7 +27,7 @@
         </select>
     </form>
 
-    <h2 class="left">Sector (by country)</h2> <h2 class="right">Language</h2>
+    <h2 class="left subheading">Sector (by country)</h2> <h2 class="right subheading">Language</h2>
 
     <dl class="tools-list"
         tal:define="tools_by_country view/tools_by_country"
