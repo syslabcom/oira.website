@@ -28,7 +28,7 @@
     </form>
 
 
-    <p id="no-tools-info" style="display: none">No OiRA tools available for these criteria</p>
+    <p id="no-tools-info" style="display: none"><em>No OiRA tools are available for these criteria.</em></p>
     <span id="tools-list-headings"><h2 class="left subheading">Sector (by country)</h2> <h2 class="right subheading">Language</h2></span>
 
     <dl class="tools-list"

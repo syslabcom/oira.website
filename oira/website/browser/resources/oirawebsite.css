@@ -932,6 +932,9 @@ body.template-toolexamples #highlightsContainer {
 #content h2.subheading{
     margin-bottom: 10px;
 }
+#content p#no-tools-info{
+    padding: 20px;
+}
 /* END: Available tools page */
 
 /* responsive */
