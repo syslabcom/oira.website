@@ -40,7 +40,7 @@ BASE_COUNTRIES = [
     'United Kingdom',
 ]
 
-COUNTRIES = ['Pan-European'] + BASE_COUNTRIES
+COUNTRIES = ['EU level'] + BASE_COUNTRIES
 
 countries = SimpleVocabulary(
     [SimpleTerm(value=item, title=_(item)) for item in COUNTRIES]
