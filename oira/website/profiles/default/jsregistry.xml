@@ -8,7 +8,7 @@
     enabled="True" expression=""
     id="++resource++oira.website.resources/collapse.js"
     inline="False"/>
- <javascript cacheable="True" compression="safe" cookable="True"
+ <javascript cacheable="True" compression="none" cookable="True"
     enabled="True" expression=""
     id="++resource++oira.website.resources/patterns.js"
     inline="False"/>
