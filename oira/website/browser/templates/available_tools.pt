@@ -27,7 +27,9 @@
         </select>
     </form>
 
-    <h2 class="left subheading">Sector (by country)</h2> <h2 class="right subheading">Language</h2>
+
+    <p id="no-tools-info" style="display: none">No OiRA tools available for these criteria</p>
+    <span id="tools-list-headings"><h2 class="left subheading">Sector (by country)</h2> <h2 class="right subheading">Language</h2></span>
 
     <dl class="tools-list"
         tal:define="tools_by_country view/tools_by_country"
@@ -50,6 +52,21 @@
             </tal:loop>
         </tal:tools>
     </dl>
+    <script type="text/javascript">
+        $('select[name=country], select[name=language]').change(function () {
+            window.setTimeout(function () {
+                if ($('a.tool-sector:visible').length === 0) {
+                    $('#tools-list-headings').fadeOut(function () {
+                        $('#no-tools-info').fadeIn();
+                    });
+                } else {
+                    $('#tools-list-headings').fadeIn(function () {
+                        $('#no-tools-info').fadeOut();
+                    });
+                }
+            }, 300);
+        });
+    </script>
 </metal:content-core>
 </body>
 </html>
