@@ -4,4 +4,6 @@ Changelog
 1.0dev (unreleased)
 -------------------
 
-- Upgrade step required, to version 8. refs #10689
+- Initial release
+
+  Upgrade step required, to version 8. refs #10689
