@@ -1,0 +1,24 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+  i18n_domain="plone">
+
+  <genericsetup:upgradeSteps
+        source="7"
+        destination="8"
+        profile="oira.website:default">
+
+    <genericsetup:upgradeStep
+        title="Install Datagridfield"
+        description="This step installs the collective.z3cform.datagridfield add-on."
+        handler=".upgrade.install_datagridfield"/>
+
+    <genericsetup:upgradeStep
+        title="Add Tools Registry"
+        description="Add and populate the OiRA Tools registry, which contains tools shown on the OiRA Tools page. IMPORTANT: This step will NOT run if there is already an object with id 'available-tools' in the site root."
+        handler=".upgrade.add_tools_registry "/>
+
+  </genericsetup:upgradeSteps>
+
+</configure>
+

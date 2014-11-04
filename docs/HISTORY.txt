@@ -1,7 +1,9 @@
 Changelog
 =========
 
-1.0dev (unreleased)
--------------------
+1.0 (2014-11-04)
+----------------
 
 - Initial release
+
+  Upgrade step required, to version 8. refs #10689

@@ -1,0 +1,3 @@
+<object name="portal_types">
+ <object name="oira.website.tools_registry" meta_type="Dexterity FTI" />
+</object>

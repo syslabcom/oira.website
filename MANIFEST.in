@@ -2,3 +2,17 @@ recursive-include main_directory *
 recursive-include docs *
 include *
 global-exclude *.pyc
+
+# added by check_manifest.py
+recursive-include oira *.css
+recursive-include oira *.eot
+recursive-include oira *.gif
+recursive-include oira *.jpg
+recursive-include oira *.js
+recursive-include oira *.otf
+recursive-include oira *.png
+recursive-include oira *.props
+recursive-include oira *.pt
+recursive-include oira *.py
+recursive-include oira *.xml
+recursive-include oira *.zcml

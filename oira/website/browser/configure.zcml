@@ -2,8 +2,10 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:grok="http://namespaces.zope.org/grok"
     i18n_domain="oira.website">
 
+    <grok:grok package="." />
     <include package="z3c.jbot" file="meta.zcml" />
 
     <browser:jbot
