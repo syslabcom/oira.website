@@ -29,7 +29,7 @@ h3 { font-size: 100%;}
     color: #996699 !important;
 }
 #content a:visited, dl.portlet a:visited {
-    color: #996699 !important;	
+    color: #996699 !important;
 }
 dl.portlet a.navTreeCurrentNode {
     border-left: 1em solid !important;
@@ -891,6 +891,52 @@ body.template-toolexamples #highlightsContainer {
     color: rgb(102, 102, 102);
 }
 
+/* BEGIN: Available tools page */
+#content .tool-sector {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#content .tool-filters {
+    padding: 5px;
+}
+
+#content  .tool-filters select {
+    padding: 3px;
+}
+
+#content dt.tool-country {
+    background-color: #eee;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#content .tool-language {
+    float: right;
+    padding-right: 10px;
+}
+
+#content .tools-list {
+    clear: both;
+}
+
+#content .left {
+    float: left;
+}
+
+#content .right {
+    float: right;
+    clear: right;
+}
+
+#content h2.subheading{
+    margin-bottom: 10px;
+}
+#content p#no-tools-info{
+    padding: 20px;
+}
+/* END: Available tools page */
+
 /* responsive */
 @media (max-width: 970px) {
     #visual-portal-wrapper { width: 100%; }
@@ -953,4 +999,5 @@ body.template-toolexamples #highlightsContainer {
     h3 img { margin-left: 5px; }
     #content pre { white-space: normal; }
 }
+
 /* /responsive */

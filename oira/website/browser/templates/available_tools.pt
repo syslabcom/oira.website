@@ -1,0 +1,72 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="osha">
+<body>
+<metal:content-core fill-slot="content-core">
+    <p class="callout" tal:replace="structure context/text/raw">
+        All published tools by different sectors in different EU Member states and EU organisations
+    </p>
+
+    <form class="tool-filters" tal:define="current_language view/get_current_language">
+
+        <label>Filter:</label>
+
+        <select name="country">
+            <option value="all">All countries</option>
+            <option tal:repeat="country view/vocabularies/COUNTRIES"
+                tal:content="country"
+                tal:attributes="value country"></option>
+        </select>
+
+        <select name="language">
+            <option value="all">All languages</option>
+            <option tal:repeat="lang python:view.languages.items()"
+                tal:content="python:lang[1]"
+                tal:attributes="value python:lang[0]"></option>
+        </select>
+    </form>
+
+
+    <p id="no-tools-info" style="display: none"><em>No OiRA tools are available for these criteria.</em></p>
+    <span id="tools-list-headings"><h2 class="left subheading">Sector (by country)</h2> <h2 class="right subheading">Language</h2></span>
+
+    <dl class="tools-list"
+        tal:define="tools_by_country view/tools_by_country"
+        tal:repeat="country tools_by_country">
+
+        <tal:tools define="tools python:tools_by_country[country]['tools']" condition="tools">
+            <dt class="pat-depends tool-country" tal:content="country"
+                tal:attributes="data-pat-depends python:tools_by_country[country]['condition']">Europe</dt>
+
+            <tal:loop repeat="tool tools">
+                <dd class="pat-depends"
+                    tal:attributes="data-pat-depends string:action:show;; condition:(country='${country}' or country=all) and (language='${tool/language}' or language=all)">
+                    <a class="tool-sector" tal:content="tool/sector" tal:condition="tool/url" tal:attributes="href tool/url">Hairdressers</a>
+                    <span class="tool-sector" tal:content="tool/sector" tal:condition="not: tool/url">Hairdressers</span>
+                    <tal:if_description condition="tool/sector_description">
+                        (<span tal:replace="tool/sector_description"/>)
+                    </tal:if_description>
+                    <span class="tool-language" tal:condition="tool/language" tal:content="tool/language_name"/>
+                </dd>
+            </tal:loop>
+        </tal:tools>
+    </dl>
+    <script type="text/javascript">
+        $('select[name=country], select[name=language]').change(function () {
+            window.setTimeout(function () {
+                if ($('a.tool-sector:visible').length === 0) {
+                    $('#tools-list-headings').fadeOut(function () {
+                        $('#no-tools-info').fadeIn();
+                    });
+                } else {
+                    $('#tools-list-headings').fadeIn(function () {
+                        $('#no-tools-info').fadeOut();
+                    });
+                }
+            }, 300);
+        });
+    </script>
+</metal:content-core>
+</body>
+</html>
